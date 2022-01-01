@@ -1,3 +1,5 @@
 # 6Companies30days
 
-This is the github repo to track my progress.
+This is my github repo to track my progress of this challenge.
+//#6Companies30days //# ReviseWithArsh
+
