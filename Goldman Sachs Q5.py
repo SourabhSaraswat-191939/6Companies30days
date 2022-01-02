@@ -1,11 +1,11 @@
 # Program to find Nth Ugly Number.
 
+# Using DP
 def getNthUglyNo(n):
     ugly = [1]
     i2 = i3 = i5 = 0
 
     for i in range(1,n):
-        print(ugly[i2],ugly[i3],ugly[i5])
         mini = min(ugly[i2]*2,ugly[i3]*3,ugly[i5]*5)
 
         ugly.append(mini)
@@ -18,3 +18,4 @@ def getNthUglyNo(n):
     
     return ugly[n-1]
 print(getNthUglyNo(10))
+
