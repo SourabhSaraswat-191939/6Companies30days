@@ -1,5 +1,6 @@
 # Minimum Size Subarray Sum
 
+# Time Complexity -> O(n)
 def minSubArrayLen(target, nums):
     i=0
     result = 0
@@ -17,3 +18,4 @@ def minSubArrayLen(target, nums):
     return length if length!=len(nums)+1 else 0
 
 print(minSubArrayLen(7,[2,3,1,2,4,3]))
+
