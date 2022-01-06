@@ -36,23 +36,26 @@ def findMinNumberPattern(Str):
 def printMinNumberForPattern(Str):
     stack = []
     result = ''
-    largest = 0
-    if Str[0]=='I':
-        largest += 1
-        result += str(largest)
-    else:
-        largest += 1
-        stack.append(largest)
+    largest = 1
+    # if Str[0]=='I':
+    #     largest += 1
+    #     result += str(largest)
+    # else:
+    #     largest += 1
+    #     stack.append(largest)
 
     for char in Str:
         if char=='I':
+            stack.append(largest)
+            largest += 1
             while stack:
                 result += str(stack.pop())
-            largest += 1
-            stack.append(largest)
+            
         else:
-            largest+=1
             stack.append(largest)            
+            largest+=1
+    
+    stack.append(largest)
     while stack:
         result += str(stack.pop())
     return int(result)
