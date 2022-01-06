@@ -1,6 +1,6 @@
 # Given a pattern containing only I's and D's. I for increasing and D for decreasing.Devise an algorithm to print the minimum number following that pattern.
 
-
+# Approach -> 1 with Time Complexity of O(n) and Space Complexity of O(1)
 def findMinNumberPattern(Str):
     ans = "" 
     i = 0
@@ -29,3 +29,33 @@ def findMinNumberPattern(Str):
         i = j
  
     return ans
+
+
+# Approach -> 2, using Stack with Time Complexity of O(n) and Space Complexity of O(ns)
+
+def printMinNumberForPattern(Str):
+    stack = []
+    result = ''
+    largest = 0
+    if Str[0]=='I':
+        largest += 1
+        result += str(largest)
+    else:
+        largest += 1
+        stack.append(largest)
+
+    for char in Str:
+        if char=='I':
+            while stack:
+                result += str(stack.pop())
+            largest += 1
+            stack.append(largest)
+        else:
+            largest+=1
+            stack.append(largest)            
+    while stack:
+        result += str(stack.pop())
+    return int(result)
+
+
+print(printMinNumberForPattern('IIDDD'))
