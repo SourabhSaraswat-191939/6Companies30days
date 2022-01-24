@@ -9,7 +9,7 @@
 
 ```1) Find a continuous sub-array which adds to a given number S.``` 
 
-```2) Find the length of the Longest Arithmetic Progression (LLAP) in it.```
+```2) Find the length of the Longest Arithmetic Progression (LLAP) in it.```   **IMP**
 
 ```3) Number of distinct Words with k maximum contiguous vowels(Joe and his Dictionary Problem```
 
@@ -19,7 +19,7 @@
 
 ```6) Generate all combinations of well-formed(balanced) parentheses.```
 
-```7) Pots of Gold Game (Similar to Covid and Beds problem).```
+```7) Pots of Gold Game (Similar to Covid and Beds problem).```     **IMP**
 
 ```8) ATOI.```
 
