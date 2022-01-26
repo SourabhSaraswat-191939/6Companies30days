@@ -23,7 +23,7 @@
 
 ```8) ATOI.```
 
-```9) Smallest palindromic number greater than N using the same set of digits as in N.```
+```9) Smallest palindromic number greater than N using the same set of digits as in N.```.    **All Test Case Not Passed**
 
 ```10) Elections.```  
 
